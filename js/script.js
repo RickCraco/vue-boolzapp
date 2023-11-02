@@ -175,11 +175,16 @@ createApp({
                 }
             ],
             activeIndex: 0,
+            activeBg:''
         }
     },
     methods: {
         cambiaChat(index){
             this.activeIndex = index;
+        },
+        cambiaBg(){
+            this.activeBg = '';
+            this.activeBg = 'header';
         }
     }
 }).mount('#app');
