@@ -79,7 +79,7 @@
                             <div><img :src="contacts[activeIndex].avatar" alt="user" class="user-img"></div>
                             <div>
                                 <p class="m-0 ms-2">{{contacts[activeIndex].name}}</p>
-                                <p class="m-0 ms-2">Ultimo accesso oggi alle 12:00</p>
+                                <p class="m-0 ms-2">Ultimo accesso oggi alle {{contacts[activeIndex].messages[contacts[activeIndex].messages.length - 1].date}}</p>
                             </div>
                         </div>
                         <div class="my-text-grey fs-5">
