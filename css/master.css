@@ -78,3 +78,37 @@ body {
 .my-text-grey{
     color: var(--color-dark-grey);
 }
+
+.my-bg-messaggi{
+    background-image: url('../img/mine.jpg');
+}
+
+.sent {
+    margin: 25px 25px;
+    display: flex;
+    justify-content: end;
+}
+.sent-message {
+    background-color: var(--color-sent-message);
+    padding: 20px;
+    padding-right: 8rem;
+    border-radius: 15px;
+    position: relative;
+}
+.received {
+    margin: 25px 25px;
+    display: flex;
+}
+.received-message {
+    background-color: white;
+    padding: 20px;
+    padding-right: 8rem;
+    border-radius: 15px;
+    position: relative;
+}
+.hour-message {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 0.6rem;
+}
