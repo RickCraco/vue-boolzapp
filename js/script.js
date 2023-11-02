@@ -173,10 +173,13 @@ createApp({
                         }
                     ],
                 }
-            ]
+            ],
+            activeIndex: 0,
         }
     },
     methods: {
-
+        cambiaChat(index){
+            this.activeIndex = index;
+        }
     }
 }).mount('#app');
