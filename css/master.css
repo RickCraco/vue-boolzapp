@@ -52,3 +52,14 @@ body {
     font-size: 20px;
     color: var(--color-dark-grey);
 }
+
+.bell{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+}
+
+.icon-bell{
+    font-size: 30px;
+}
