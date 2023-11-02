@@ -48,7 +48,7 @@
                         <div class="col-12 my-2">
                             <div class="input-group input-group-sm">
                                 <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa-solid fa-magnifying-glass"></i></span>
-                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Cerca o inizia una nuova chat o fatti una vita">
+                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Cerca o inizia una nuova chat">
                             </div>
                         </div>
                         <div class="col-12 flex-grow-1 overflow-y-auto h0 px-0 py-2">
@@ -65,8 +65,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-8">
-                    
+                <div class="col-12 col-md-8 px-0">
+                    <div class="col-12 header">
+                        <div class="d-flex align-items-center">
+                            <img :src="contacts[0].avatar" alt="user" class="user-img">
+                            <p>{{contacts[0].name}}</p>
+                            <p>Ultimo accesso oggi alle 12:00</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
