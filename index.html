@@ -98,7 +98,7 @@
                     </div>
                     <div class="col-12 header d-flex justify-content-around align-items-center p-2">
                         <div><i class="fa-regular fa-face-smile fs-4"></i></div>
-                        <div class="w-75"><input type="text" class="form-control" placeholder="Scrivi un messaggio"></div>
+                        <div class="w-75"><input type="text" class="form-control" placeholder="Scrivi un messaggio" v-model="userMessage" @keyup.enter="sendMessage()"></div>
                         <div><i class="fa-solid fa-microphone fs-4"></i></div>
                     </div>
                 </div>
