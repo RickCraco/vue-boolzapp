@@ -177,6 +177,7 @@ createApp({
             ],
             activeIndex: 0,
             userMessage: '',
+            filterContact: '',
         }
     },
     methods: {
