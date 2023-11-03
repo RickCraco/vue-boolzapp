@@ -178,8 +178,12 @@ createApp({
         }
     },
     methods: {
-        cambiaChat(index){
-            this.activeIndex = index;
+        cambiaChat(id){
+            for(let i = 0; i < this.contacts.length; i++){
+                if(this.contacts[i].id === id){
+                    this.activeIndex = i;
+                }
+            }
         },
         cambiaBg(index){
             if(this.activeIndex === index){
