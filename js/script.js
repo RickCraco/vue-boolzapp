@@ -175,6 +175,7 @@ createApp({
                 }
             ],
             activeIndex: 0,
+            userMessage: '',
         }
     },
     methods: {
@@ -189,6 +190,14 @@ createApp({
             if(this.activeIndex === index){
                 return 'header';
             }
+        },
+        sendMessage(){
+            this.contacts[this.activeIndex].messages.push({
+                date: '10/01/2020 15:30:55',
+                message: this.userMessage,
+                status:'sent'
+            });
+            this.userMessage = '';
         }
     }
 }).mount('#app');
