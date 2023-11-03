@@ -64,7 +64,7 @@
                                 <div><img :src="user.avatar" alt="user2" class="user-img"></div>
                                 <div class="ms-2">
                                     <p class="m-0">{{user.name}}</p>
-                                    <p class="m-0">Ultimo messaggio inviato {{user.messages[user.messages.length - 1].date}}</p>
+                                    <p class="m-0">{{user.messages[user.messages.length - 1].message}}</p>
                                 </div>
                                 <div class="my-date">
                                     <span>{{user.messages[user.messages.length - 1].date}}</span>
