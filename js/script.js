@@ -178,6 +178,8 @@ createApp({
             activeIndex: 0,
             userMessage: '',
             filterContact: '',
+            indexMessage: null,
+            showDropdown: ''
         }
     },
     methods: {
@@ -185,6 +187,7 @@ createApp({
             for(let i = 0; i < this.contacts.length; i++){
                 if(this.contacts[i].id === id){
                     this.activeIndex = i;
+                    this.showDropdown = '';
                 }
             }
         },
@@ -214,6 +217,14 @@ createApp({
                 return contact.name.toLowerCase().includes(this.filterContact.toLowerCase());
             });
             return filteredContacts;
+        },
+        toggleDropdown(index){
+            this.indexMessage = index;
+            if(this.showDropdown === ''){
+                this.showDropdown = 'show';
+            }else{
+                this.showDropdown = '';
+            }
         }
     }
 }).mount('#app');
