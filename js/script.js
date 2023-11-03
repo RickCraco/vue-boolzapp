@@ -1,4 +1,5 @@
 const { createApp } = Vue;
+const dt = luxon.DateTime;
 
 createApp({
     data() {
@@ -193,7 +194,7 @@ createApp({
         },
         sendMessage(){
             this.contacts[this.activeIndex].messages.push({
-                date: '10/01/2020 15:30:55',
+                date: dt.now().setLocale('it').toLocaleString(dt.TIME_SIMPLE),
                 message: this.userMessage,
                 status:'sent'
             });
