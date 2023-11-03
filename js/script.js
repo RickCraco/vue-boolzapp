@@ -207,7 +207,7 @@ createApp({
                     status:'received' 
                 });
             }, 1000)
-            this.userMessage = '';
+            this.userMessage = ''; 
         },
         findContacts(){
             const filteredContacts = this.contacts.filter(contact => {
