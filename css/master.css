@@ -112,3 +112,9 @@ body {
     right: 5px;
     font-size: 0.6rem;
 }
+
+.my-dropdown > a{
+    position:  absolute;
+    top: 0;
+    right: 10px;
+}
