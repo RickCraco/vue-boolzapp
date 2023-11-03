@@ -188,8 +188,8 @@ createApp({
                 }
             }
         },
-        cambiaBg(index){
-            if(this.activeIndex === index){
+        cambiaBg(id){
+            if(this.contacts[this.activeIndex].id === id){
                 return 'header';
             }
         },
@@ -208,6 +208,12 @@ createApp({
                 });
             }, 1000)
             this.userMessage = '';
+        },
+        findContacts(){
+            const filteredContacts = this.contacts.filter(contact => {
+                return contact.name.toLowerCase().includes(this.filterContact.toLowerCase());
+            });
+            return filteredContacts;
         }
     }
 }).mount('#app');

@@ -59,7 +59,7 @@
                         </div>
                         <div class="col-12 flex-grow-1 overflow-y-auto h0 px-0 py-2">
                             <div class="border-top p-2 d-flex align-items-center position-relative"
-                                v-for="(user, index) in contacts" @click="cambiaChat(user.id),cambiaBg(index)" :class="cambiaBg(index)">
+                                v-for="(user, index) in findContacts()" @click="cambiaChat(user.id),cambiaBg(user.id)" :class="cambiaBg(user.id)">
                                 <div></div>
                                 <div><img :src="user.avatar" alt="user2" class="user-img"></div>
                                 <div class="ms-2">
