@@ -64,10 +64,10 @@
                                 <div><img :src="user.avatar" alt="user2" class="user-img"></div>
                                 <div class="ms-2">
                                     <p class="m-0">{{user.name}}</p>
-                                    <p class="m-0">{{user.messages[user.messages.length - 1].message}}</p>
+                                    <p class="m-0">{{lastMessage(user)}}</p>
                                 </div>
                                 <div class="my-date">
-                                    <span>{{user.messages[user.messages.length - 1].date}}</span>
+                                    <span>{{myDate(user)}}</span>
                                 </div>
                             </div>
                         </div>
@@ -79,7 +79,7 @@
                             <div><img :src="contacts[activeIndex].avatar" alt="user" class="user-img"></div>
                             <div>
                                 <p class="m-0 ms-2">{{contacts[activeIndex].name}}</p>
-                                <p class="m-0 ms-2">Ultimo accesso oggi alle {{contacts[activeIndex].messages[contacts[activeIndex].messages.length - 1].date}}</p>
+                                <p class="m-0 ms-2">Ultimo accesso oggi alle {{myDate(contacts[activeIndex])}}</p>
                             </div>
                         </div>
                         <div class="my-text-grey fs-5">

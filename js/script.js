@@ -232,6 +232,16 @@ createApp({
         },
         deleteMessage(index){
             this.contacts[this.activeIndex].messages.splice(index, 1);
+        },
+        lastMessage(user){
+            if(user.messages.length > 0){
+                return user.messages[user.messages.length - 1].message;
+            }
+        },
+        myDate(user){
+            if(user.messages.length > 0){
+                return user.messages[user.messages.length - 1].date;
+            }
         }
     }
 }).mount('#app');
