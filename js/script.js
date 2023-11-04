@@ -207,7 +207,7 @@ createApp({
             setTimeout(() => {
                 this.contacts[this.activeIndex].messages.push({
                     date: dt.now().setLocale('it').toLocaleString(dt.TIME_SIMPLE),
-                    message: 'ok',
+                    message: this.risposteArray[this.getRndInteger(0, this.risposteArray.length - 1)],
                     status:'received' 
                 });
             }, 1000)
