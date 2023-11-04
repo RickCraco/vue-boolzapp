@@ -179,7 +179,8 @@ createApp({
             userMessage: '',
             filterContact: '',
             indexMessage: null,
-            showDropdown: ''
+            showDropdown: '',
+            risposteArray:['ciao','sto bene', 'vado al negozio','ci pensano i compagni di merende', 'ok','nono mamma non é a casa', 'vuoi venire a casa?', 'non ho già mangiato ieri, ordiniamo']
         }
     },
     methods: {
