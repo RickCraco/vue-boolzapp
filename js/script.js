@@ -226,6 +226,9 @@ createApp({
             }else{
                 this.showDropdown = '';
             }
+        },
+        getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) ) + min;
         }
     }
 }).mount('#app');
