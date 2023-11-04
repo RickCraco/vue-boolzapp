@@ -229,6 +229,9 @@ createApp({
         },
         getRndInteger(min, max) {
             return Math.floor(Math.random() * (max - min + 1) ) + min;
+        },
+        deleteMessage(index){
+            this.contacts[this.activeIndex].messages.splice(index, 1);
         }
     }
 }).mount('#app');

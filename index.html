@@ -96,7 +96,7 @@
                                 <div class="my-dropdown">
                                     <a class="dropdown-toggle text-black" @click="toggleDropdown(index)" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
                                     <ul class="dropdown-menu" :class="indexMessage === index ? showDropdown : '' ">
-                                      <li><a class="dropdown-item" href="#">Delete message</a></li>
+                                      <li><a class="dropdown-item" href="#" @click="deleteMessage(index)">Delete message</a></li>
                                     </ul>
                                 </div>
                             </div>
