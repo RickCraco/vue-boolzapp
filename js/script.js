@@ -180,7 +180,8 @@ createApp({
             filterContact: '',
             indexMessage: null,
             showDropdown: '',
-            risposteArray:['ciao','sto bene', 'vado al negozio','ci pensano i compagni di merende', 'ok','nono mamma non é a casa', 'vuoi venire a casa?', 'non ho già mangiato ieri, ordiniamo']
+            risposteArray:['ciao','sto bene', 'vado al negozio','ci pensano i compagni di merende', 'ok','nono mamma non é a casa', 'vuoi venire a casa?', 'non ho già mangiato ieri, ordiniamo'],
+            showChat: false,
         }
     },
     methods: {
