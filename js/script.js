@@ -192,6 +192,7 @@ createApp({
                     this.showDropdown = '';
                 }
             }
+            this.showChat = true;
         },
         cambiaBg(id){
             if(this.contacts[this.activeIndex].id === id){

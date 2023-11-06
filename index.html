@@ -28,7 +28,7 @@
     <div id="app">
         <div class="container border h-100">
             <div class="row flex-nowrap h-100">
-                <div class="col-12 col-md-4 contacts">
+                <div class="col-12 col-md-4 d-md-block contacts" :class="{'d-none': showChat}">
                     <div class="row h-100 flex-column flex-nowrap">
                         <div class="col-12 header p-1 d-flex align-items-center justify-content-between">
                             <div>
@@ -73,7 +73,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-8 d-none p-0 d-md-flex flex-column">
+                <div class="col-12 col-md-8 p-0 d-md-flex flex-column" :class="{'d-none': !showChat}, {'d-flex': showChat}">
                     <div class="col-12 header d-flex justify-content-between align-items-center">
                         <div class="d-flex align-items-center p-1">
                             <div><img :src="contacts[activeIndex].avatar" alt="user" class="user-img"></div>
@@ -83,6 +83,7 @@
                             </div>
                         </div>
                         <div class="my-text-grey fs-5">
+                            <i class="fa-solid mx-2 fa-arrow-left" @click="showChat = false"></i>
                             <i class="fa-solid mx-2 fa-magnifying-glass"></i>
                             <i class="fa-solid mx-2  fa-paperclip"></i>
                             <i class="fa-solid mx-2 fa-ellipsis-vertical"></i>
