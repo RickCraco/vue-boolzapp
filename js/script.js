@@ -204,12 +204,21 @@ createApp({
                 status:'sent'
             });
 
+            this.$nextTick(() => {
+                this.$refs.mex[this.$refs.mex.length - 1].scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest"});
+            });
+
             setTimeout(() => {
                 this.contacts[this.activeIndex].messages.push({
                     date: dt.now().setLocale('it').toLocaleString(dt.TIME_SIMPLE),
                     message: this.risposteArray[this.getRndInteger(0, this.risposteArray.length - 1)],
                     status:'received' 
                 });
+
+                this.$nextTick(() => {
+                    this.$refs.mex[this.$refs.mex.length - 1].scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest"});
+                });
+
             }, 1000)
             this.userMessage = ''; 
         },
